@@ -3,19 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lameegits Portfolio</title>
+    <title>Lamees Alnajjar - Software Engineering Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; background-color: #f4f4f9; color: #333; }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; }
-        .box { background: white; padding: 20px; display: inline-block; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            color: #16a085;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 25px;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .skill-badge {
+            background: #e8f8f5;
+            color: #117a65;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .footer {
+            font-size: 0.85rem;
+            color: #95a5a6;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>Welcome to My Professional Portfolio</h1>
-        <p>This project is containerized using <strong>Docker</strong> and managed via <strong>GitHub</strong> for OS Lab Assignment #2.</p>
-        <p><strong>Developed by:</strong> Lamis</p>
+
+    <div class="card">
+        <h1>Lamees Alnajjar</h1>
+        <div class="tagline">Software Engineering Student & Developer</div>
+        
+        <p>
+            Welcome to my professional containerized web portfolio. This project demonstrates modern containerization workflows using <strong>Docker</strong> and <strong>Nginx</strong>, deployed seamlessly via automated version control pipelines.
+        </p>
+
+        <div class="skills">
+            <span class="skill-badge">Frontend Development</span>
+            <span class="skill-badge">Docker & Containerization</span>
+            <span class="skill-badge">Java & Spring Boot</span>
+            <span class="skill-badge">Git & GitHub</span>
+        </div>
+
+        <div class="footer">
+            Operating Systems Lab Project | Powered by Nginx Alpine Container
+        </div>
     </div>
+
 </body>
 </html>
